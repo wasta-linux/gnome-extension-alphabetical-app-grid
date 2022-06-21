@@ -1,0 +1,22 @@
+Source: gnome-shell-extension-alphabetical-app-grid
+Section: gnome
+Priority: optional
+Maintainer: Nate Marti <nate_marti@sil.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-gnome,
+ libglib2.0-bin
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://github.com/wasta-linux/gnome-shell-extension-alphabetical-app-grid
+
+Package: gnome-shell-extension-alphabetical-app-grid
+Architecture: all
+Depends:
+ gnome-shell (<< 43~),
+ ${shlibs:Depends},
+ ${misc:Depends}
+Suggests:
+ gnome-shell-extension-prefs,
+Description: Restore the alphabetical ordering of the app grid
+ This extension restore the alphabetical ordering of the app grid in GNOME Shell.
